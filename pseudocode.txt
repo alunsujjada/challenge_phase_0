@@ -1,0 +1,44 @@
+1. 
+    STORE "m" with value is 600
+    STORE "a" with value is 2
+    CALCULATE "m" multiply by "a" and STORE to "F" 
+    DISPLAY "F"
+
+2. 
+    STORE "year" to any number
+
+    IF "year" modulus 4 equal to 0 THEN
+        IF "year" modulus 100 not equal to 0 THEN
+            DISPLAY "TAHUN KABISAT"
+        ELSE 
+            IF "year" modulus 400 equal to 0 THEN
+                DISPLAY "TAHUN KABISAT"
+            ELSE 
+                DISPLAY "BUKAN TAHUN KABISAT"
+            ENDIF
+        ENDIF
+    ELSE
+        DISPLAY "TAHUN KABISAT"
+    ENDIF
+
+3. 
+    STORE "numOfClothes" to 0
+    STORE "totalOfClothes" to 20
+    WHILE "numOfClothes" < "totalOfClothes"
+        ADD "numOfClothes" by 1
+        DISPLAY "numOfClothes"
+    END
+
+    DISPLAY "MESIN CUCI MENYALA"
+
+4. 
+    STORE "student" to 0
+    STORE "totalOfStudents" to 40
+    WHILE "student" < "totalOfStudents"
+        ADD "student" by 1
+        IF "student" have "long nails" THEN
+            DISPLAY "The Teacher will punish the student" 
+        ELSE
+            DISPLAY "The Teacher will say good" 
+        ENDIF
+    END
