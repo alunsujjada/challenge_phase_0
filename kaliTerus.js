@@ -1,27 +1,25 @@
 function kaliTerusRekursif(angka) {
     // you can only write your code here!
+    var total =1
     var strNum = String(angka)
-    var totalMultiply =1
-    if(strNum.length==1){
-        return totalMultiply * angka
+    if(strNum.length ==1){
+        return angka
     }
     else{
-        var getNum = strNum.split('')
-        for(var i=0;i<getNum.length;i++){
-            totalMultiply *= parseInt(getNum[i])
+        
+        for(var i=0;i<strNum.length;i++){
+            total *= Number(strNum[i])
         }
-
-        var strNum = String(totalMultiply)
-        if(strNum.length >=1){
-            return kaliTerusRekursif(totalMultiply)
-            
-        }
+        
+        return kaliTerusRekursif(total)
+        
+       
         
     }
   }
   
   // TEST CASES
-  console.log(kaliTerusRekursif(66)); // 8
+  console.log(kaliTerusRekursif(666)); // 8
   console.log(kaliTerusRekursif(3)); // 3
   console.log(kaliTerusRekursif(24)); // 8
   console.log(kaliTerusRekursif(654)); // 0
